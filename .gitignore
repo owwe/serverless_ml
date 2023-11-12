@@ -1,0 +1,4 @@
+venv/
+.sh
+.env
+.DS_Store
