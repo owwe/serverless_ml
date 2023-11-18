@@ -25,7 +25,10 @@ jobs:
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: python iris-feature-pipeline-daily.py
-
+      - name: execute python workflows for prediction from bash script     
+        env:
+          HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+        run: python iris-batch-inference-pipeline.py
         
 
 
