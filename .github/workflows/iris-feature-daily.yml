@@ -1,6 +1,9 @@
 name: iris-feature-pipeline-daily
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     - cron: '11 11 * * *'
